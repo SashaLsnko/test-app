@@ -28,9 +28,8 @@ const handleOpen = ()=>{
         <p>
           {navigator.userAgent}
         </p>
-        <p>
-        getInstalledRelatedApps in navigator
-          {"getInstalledRelatedApps" in navigator}
+        <p> 
+          {("getInstalledRelatedApps" in navigator) ? "getInstalledRelatedApps in navigator" : "getInstalledRelatedApps not in navigator"}
         </p>
         {(/CriOS|Android.*Chrome/.test(navigator.userAgent)) &&
          <button onClick={handleOpen}> Open</button>}
