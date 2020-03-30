@@ -19,7 +19,7 @@ const handleOpen = ()=>{
         },25)
         window.location.assign(`walmartapp://section/${url}`)
       }
-      
+
       function App() {
   return (
     <div className="App">
@@ -27,6 +27,10 @@ const handleOpen = ()=>{
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           {navigator.userAgent}
+        </p>
+        <p>
+        getInstalledRelatedApps in navigator
+          {"getInstalledRelatedApps" in navigator}
         </p>
         {(/CriOS|Android.*Chrome/.test(navigator.userAgent)) &&
          <button onClick={handleOpen}> Open</button>}
