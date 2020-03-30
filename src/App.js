@@ -9,7 +9,8 @@ const handleOpen = ()=>{
   setTimeout(()=>{
     if(new Date().valueOf()-now > 100) return;
     window.location.assign(
-      "https://apps.apple.com/ca/app/walmart-shopping-groceries/id1084793516"
+      "https://play.google.com/store/apps/details?id=ca.walmart.ecommerceapp&hl=en_CA"
+      // "https://apps.apple.com/ca/app/walmart-shopping-groceries/id1084793516"
       );
       // setTimeout(()=>{
         //   window.location.assign(
