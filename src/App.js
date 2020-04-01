@@ -3,21 +3,21 @@ import logo from './logo.svg';
 import './App.css';
 
 const handleOpen = ()=>{
-  
-  const now = new Date().valueOf()
+
+  // const now = new Date().valueOf()
   const url = window.location.href;
-  setTimeout(()=>{
-    if(new Date().valueOf()-now > 100) return;
-    window.location.assign(
-      "https://play.google.com/store/apps/details?id=ca.walmart.ecommerceapp&hl=en_CA"
-      // "https://apps.apple.com/ca/app/walmart-shopping-groceries/id1084793516"
-      );
-      // setTimeout(()=>{
-        //   window.location.assign(
-          //     url
-          //   );
-          // })
-        },25)
+  // setTimeout(()=>{
+  //   if(new Date().valueOf()-now > 100) return;
+  //   window.location.assign(
+  //     "https://play.google.com/store/apps/details?id=ca.walmart.ecommerceapp&hl=en_CA"
+  //     // "https://apps.apple.com/ca/app/walmart-shopping-groceries/id1084793516"
+  //     );
+  //     // setTimeout(()=>{
+  //       //   window.location.assign(
+  //         //     url
+  //         //   );
+  //         // })
+  //       },25)
         window.location.assign(`walmartapp://section/${url}`)
       }
 
